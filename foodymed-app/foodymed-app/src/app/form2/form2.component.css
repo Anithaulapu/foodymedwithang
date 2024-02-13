@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+.survey-container {
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    width: 80%;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.questionnaire {
+    font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.question {
+    font-family: 'Arial', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Targets the first two .question divs to make them side by side */
+.question:nth-child(-n+2) {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Style for the labels to ensure they are in a row for the first two questions */
+.question:nth-child(-n+2) label {
+  display: block; /* Change this to flex if you want labels to be more flexible */
+  margin: 0 5px; /* Adjust spacing around each label */
+}
+
+/* Adjustments for the third question to ensure it is centered and takes the full width */
+.questionnaire > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; /* Adds some space above the third question */
+}
+button:not([type="submit"]):hover {
+    background-color: #ddd;
+  }
+  
+  button:not([type="submit"]).active {
+    background-color: #666;
+    color: white;
+  }
+  /* Overriding styles for the submit button */
+  button[type="submit"] {
+    background-color: #44a08d; /* Modify as per your color scheme */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #358e77; /* Darker shade for hover effect */
+  }
+  
+
+.back-button, .continue-button {
+  margin: 10px; /* Adds some space around the buttons */
+}

@@ -1,0 +1,132 @@
+/* app.component.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  div > input {
+    margin-right: 10px; /* Adds spacing between the inputs */
+}
+
+  .form-container {
+    background-color: #fff;
+    width: 80%;
+    max-width:100% ;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .gender-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .gender-buttons button {
+    width: 100px;
+    margin: 0 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #008CBA; /* Blue */
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #007B9E;
+  }
+  
+  button:not([type="submit"]) {
+    background-color: #e7e7e7; /* Light Grey */
+    color: black;
+  }
+  
+  button:not([type="submit"]):hover {
+    background-color: #ddd;
+  }
+  
+  button:not([type="submit"]).active {
+    background-color: #666;
+    color: white;
+  }
+  
+  /* Style for the labels and inputs for age, height, and weight */
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-group label,
+  .form-group input {
+    width: 32%;
+    text-align: left;
+  }
+  
+  /* Overriding styles for the submit button */
+  button[type="submit"] {
+    background-color: #44a08d; /* Modify as per your color scheme */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #358e77; /* Darker shade for hover effect */
+  }
+  

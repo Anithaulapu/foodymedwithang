@@ -1,0 +1,23 @@
+<!-- app.component.html -->
+<div class="form-container" routerLink="/foodymed/menu">
+    <h1>CIAO </h1>
+    <p>Siamo pronti a guidarti nel tuo percorso alimentare personalizzato! Bastano poche risposte alle nostre domande per ottenere la tua soluzione su misura!</p>
+    
+    <form #form1="ngForm" (ngSubmit)="form1Submit($event)" autocomplete="off">
+      <div>
+        <label>Sesso</label>
+          <button type="button" (click)="setSesso('f')" [class.active]="formData.sesso === 'f'">Donna</button>
+          <button type="button" (click)="setSesso('m')" [class.active]="formData.sesso === 'm'">Uomo</button>
+      </div>
+      <div>
+        <input type="number" name="age"  #eta="ngModel" [(ngModel)]="formData.eta" placeholder="Età" >anni
+        <input type="number" name="height"  #altezza="ngModel" [(ngModel)]="formData.altezza" placeholder="Altezza">cm
+        <input type="number" name="weight"  #peso="ngModel" [(ngModel)]="formData.peso" placeholder="Peso">kg
+    </div>
+    
+      
+      <button type="submit" [disabled]="form1.invalid" >Continua</button>
+    </form>
+  </div>
+
+  <!-- <app-form2 [formDataId]="formData.id"></app-form2> -->

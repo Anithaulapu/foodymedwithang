@@ -1,0 +1,46 @@
+<div class="survey-container" routerLink="/foodymed/menu2">
+    <button class="back-button" routerLink="/foodymed/menu">INDIETRO</button>
+    <form #form2="ngForm" (ngSubmit)="form2Submit($event)" autocomplete="off">
+        <div class="questionnaire">
+            <div class="question">
+                <div class="option">
+                    <h4>HAI UN LAVORO SEDENTARIO</h4>
+                    <label>
+                        <!-- <input type="radio" name="activeWork" value="notExercise"> -->
+                        <input type="radio" (click)="setExcerise(1)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="1"> NON TI ALLENI
+                    </label>
+                    <label>
+                        <input type="radio" (click)="setExcerise(2)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="2">
+                        TI ALLENI 1-4 VOLTE A SETTIMANA
+                    </label>
+                    <label>
+                        <input type="radio" (click)="setExcerise(3)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="3">
+                        TI ALLENI 5 VOLTE A SE0TTIMANA
+                    </label>
+                </div>
+                <div class="option">
+                    <h4>HAI UN LAVORO DI MOVIMENTO</h4>
+                    <label>
+                        <input type="radio" (click)="setExcerise(4)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="4">
+                        NON TI ALLENI
+                    </label>
+                    <label>
+                        <input type="radio" (click)="setExcerise(5)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="5">
+                        TI ALLENI 1-4 VOLTE A SETTIMANA
+                    </label>
+                    <label>
+                        <input type="radio" (click)="setExcerise(6)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="6">
+                        TI ALLENI 5 VOLTE A SETTIMANA
+                    </label>
+                </div>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="radio" (click)="setExcerise(7)" name="lavoro_allena" [(ngModel)]="formData.lavoro_allena" value="7">
+                    SEI UN'ATLETA PROFESSIONISTA CON DOPPIE SEDUTE DI ALLENAMENTO
+                </label>
+            </div>
+        </div>
+        <button   [disabled]="form2.invalid" type="submit">CONTINUA</button>
+    </form>
+</div>
