@@ -1,0 +1,46 @@
+<div class="container my-5">
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-secondary">INDIETRO</button>
+      <h2 class="my-3">QUAL È IL TUO OBIETTIVO?</h2>
+    </div>
+    <form [formGroup]="goalForm" (ngSubmit)="onSubmit()">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <img src="assets/images/image1.jpg" class="img-fluid mb-2" alt="Forte dimagrimento">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="goal" id="goal1" formControlName="goal" value="strong_weight_loss">
+            <label class="form-check-label" for="goal1">FORTE DIMAGRIMENTO</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/image2.jpg" class="img-fluid mb-2" alt="Dimagrimento">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="goal" id="goal2" formControlName="goal" value="weight_loss">
+            <label class="form-check-label" for="goal2">DIMAGRIMENTO</label>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mt-3">
+        <div class="col-md-6">
+          <img src="assets/images/image3.jpg" class="img-fluid mb-2" alt="Performance / Salute">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="goal" id="goal3" formControlName="goal" value="performance_health">
+            <label class="form-check-label" for="goal3">PERFORMANCE / SALUTE</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/image4.jpg" class="img-fluid mb-2" alt="Massa / Tonificazione">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="goal" id="goal4" formControlName="goal" value="mass_toning">
+            <label class="form-check-label" for="goal4">MASSA / TONIFICAZIONE</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center mt-4">
+          <button type="submit" class="btn btn-success btn-lg">CONTINUA</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  

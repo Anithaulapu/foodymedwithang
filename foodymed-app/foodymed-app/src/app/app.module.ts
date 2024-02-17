@@ -12,6 +12,8 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
  import { customeInterceptor } from './custome.interceptor';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UseridService } from './userid.service';
+import { RegistrationComponent } from './registration/registration.component';
+import { GoalSelectionComponent } from './goal-selection/goal-selection.component';
 
 
  
@@ -20,7 +22,9 @@ import { UseridService } from './userid.service';
     AppComponent,
     Form1Component,
     Form2Component,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    RegistrationComponent,
+    GoalSelectionComponent
   ],
   imports: [
     BrowserModule,
